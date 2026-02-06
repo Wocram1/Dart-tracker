@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://script.google.com/macros/s/AKfycbwA6s1gSDwmd5UuLdS3-fFxCYLqRx6kFWyXcp-azgFbl6D6uI7iRpc_odN_qrjrL9-zVA/exec"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
