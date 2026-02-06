@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAppState } from './state';
-import { LoginScreen } from './Loginscreen';
+import { LoginScreen } from './LoginScreen';
 import { QuickplayScreen } from './Quickplayscreen';
 
 type Tab = 'games' | 'stats' | 'quickplay';
