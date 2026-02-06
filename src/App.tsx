@@ -76,18 +76,14 @@ const XpBar: React.FC = () => {
   const { user } = useAppState();
   if (!user) return null;
 
-  const totalToNext = user.xpToNext;
-  const progress = Math.max(0, Math.min(1, (totalToNext - user.xpToNext) / totalToNext));
-
-  // Einfacher: wir nehmen Anteil zwischen 0 und 1 anhand xpToNext nicht exakt – du kannst das
-  // später mit einer calcLevel‑Funktion vom Backend gespiegelt berechnen.
-
   return (
     <div className="xp-bar">
       <div className="xp-bar-track">
         <div
           className="xp-bar-fill"
-          style={{ width: `${Math.min(100, Math.max(10, 100 - (user.xpToNext / (user.xpToNext + 50)) * 100))}%` }}
+          style={{ 
+            width: `${Math.min(100, Math.max(10, 100 - (user.xpToNext / (user.xpToNext + 50)) * 100))}%` 
+          }}
         />
       </div>
       <div className="xp-bar-label">
