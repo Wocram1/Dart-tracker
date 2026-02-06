@@ -4,7 +4,7 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "https://script.google.com/macros/s/AKfycbwA6s1gSDwmd5UuLdS3-fFxCYLqRx6kFWyXcp-azgFbl6D6uI7iRpc_odN_qrjrL9-zVA/exec"
+  to = "https://script.google.com/macros/s/AKfycbycgGkGpMjqrMjgfeEZcREX6wtkMs4xHcxfuJpRloBcqt2ZKAv6uc_NWchxpnBM2P-HYQ/exec"
   status = 200
   force = true
 
